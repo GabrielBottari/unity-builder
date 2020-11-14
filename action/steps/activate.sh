@@ -26,7 +26,6 @@ if [[ -n "$UNITY_LICENSE" ]] || [[ -n "$UNITY_LICENSE_FILE" ]]; then
   # Activate license
   ACTIVATION_OUTPUT=$(xvfb-run --auto-servernum --server-args='-screen 0 640x480x24' \
     /opt/Unity/Editor/Unity \
-      -batchmode \
       -nographics \
       -logFile /dev/stdout \
       -quit \
